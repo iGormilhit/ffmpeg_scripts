@@ -1,6 +1,9 @@
 #!/bin/bash
-for file in /home/alex/Documents/ffmpeg_scripts/OSX/*.sh
+
+#First adpat the path to your scripts folder and then adapt the path to change automatically in your script files.
+
+for file in /path/to/your/scripts/folder/*.sh
 do
   echo "Traitement de $file ..."
-  sed -i -e "s/\/Users\/alexandreracine\/Desktop\//\/path\/to\/file\//g" "$file"
+  sed -i -e "s/\/old\/file\/path\//\/new\/file\/path\//g" "$file"
 done 
