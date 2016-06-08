@@ -4,6 +4,6 @@
 #At the end of the command adapt your path system where you want to save the file.
 #It is recommended to create a folder dedicated to the multiple video files you will obtain. To avoid modifying other media files you have in your computer.
 
-	ffmpeg -f avfoundation -i ":1" -c:a aac -qp 0 -preset ultrafast /Users/alexandreracine/Desktop/test/audio.aac
+	ffmpeg -f avfoundation -i ":1" -c:a aac -qp 0 -preset ultrafast /path/to/file/test/audio.aac
 
 exit 0
