@@ -11,7 +11,7 @@ Assuming the recording of your screen and audio at the same time could demand a 
 3. Adapt the time to your needs and run the `cut.sh` script  
 	3.1. It will automatically cut the audio and video files according to the time you specified.  
 	3.2. Then it will merge the audio and video files  
-	3.3. Finally it will ask you to give a name to your final file
+	3.3. Finally it will ask you to give a name to your final file  
 Watch to have the audio and video files at the same duration to be well synchronized in the final file. Normally the final duration of the two files should be the same.
 
 ## Comments
