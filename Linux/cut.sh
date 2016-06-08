@@ -47,9 +47,9 @@
 	read name
 	if [ -n $name ];
 	then
-  	mv /Users/alexandreracine/Desktop/test/capture_cut_all.mp4 /Users/alexandreracine/Desktop/test/${name}.mp4
-  	mv /Users/alexandreracine/Desktop/test/capture_cut_all.mov /Users/alexandreracine/Desktop/test/${name}.mov
-  	mv /Users/alexandreracine/Desktop/test/capture_cut_all.webm /Users/alexandreracine/Desktop/test/${name}.webm
+  	mv /home/alex/Bureau/test/capture_cut_all.mp4 /home/alex/Bureau/test/${name}.mp4
+  	mv /home/alex/Bureau/test/capture_cut_all.mov /home/alex/Bureau/test/${name}.mov
+  	mv /home/alex/Bureau/test/capture_cut_all.webm /home/alex/Bureau/test/${name}.webm
 fi
 
 exit 0
