@@ -5,13 +5,14 @@ Some basic scripts to automatize the tutorial creation workflow with ffmpeg. For
 
 Assuming the recording of your screen and audio at the same time could demand a lot of ressources to your processor, this workflow is built to aim at reducing this demand by splitting the process of recording audio and video.
 
-1. Run the `audio.sh` script and press `q` when you want to stop recording
+1. Run the `audio.sh` script and press `q` when you want to stop recording  
 2. Run the `video.sh` script while listening to the audio and press `q` when you want to stop recording. This step will help you to synchronize the files more easily at the end.  
-	2.1. The script will automatically process the conversion of the .mp4 video in two different formats (.webm and .mov) to assure your video is well supported by most of browsers.
+	2.1. The script will automatically process the conversion of the .mp4 video in two different formats (.webm and .mov) to assure your video is well supported by most of browsers.  
 3. Adapt the time to your needs and run the `cut.sh` script  
 	3.1. It will automatically cut the audio and video files according to the time you specified.  
 	3.2. Then it will merge the audio and video files  
 	3.3. Finally it will ask you to give a name to your final file  
+
 Watch to have the audio and video files at the same duration to be well synchronized in the final file. Normally the final duration of the two files should be the same.
 
 ## Comments
