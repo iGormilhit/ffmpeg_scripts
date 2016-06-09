@@ -6,6 +6,7 @@
 #It is recommended to create a folder dedicated to the multiple video files you will obtain. To avoid modifying other media files you have on your computer.
 
          ffmpeg -f alsa -i hw:0 -c:a aac -qp 0 -preset ultrafast /path/to/file/test/audio.aac
+	 echo "audio stream successfully recorded"
 
 exit 0
 
