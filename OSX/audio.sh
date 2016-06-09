@@ -7,4 +7,6 @@
 
 	ffmpeg -f avfoundation -i ":1" -c:a aac -qp 0 -preset ultrafast /path/to/file/test/audio.aac
 
+	echo "audio stream successfully recorded"
+
 exit 0
