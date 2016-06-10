@@ -25,13 +25,13 @@
 #rename with "_all" at the end
 
 	for file in "${path%}"*_cut.mp4; do
-          ffmpeg -i "$file" -i "${path%}"audio_cut.aac -strict experimental capture_cut_all.mp4;
+          ffmpeg -i "$file" -i "${path%}"audio_cut.aac -strict experimental "${path%}"capture_cut_all.mp4;
         done
         for file in "${path%}"*_cut.mov; do
-          ffmpeg -i "$file" -i "${path%}"audio_cut.aac -c:v libxvid -c:a aac -qscale:v 3 -strict experimental capture_cut_all.mov;
+          ffmpeg -i "$file" -i "${path%}"audio_cut.aac -c:v libxvid -c:a aac -qscale:v 3 -strict experimental "${path%}"capture_cut_all.mov;
         done
         for file in "${path%}"*_cut.webm; do
-          ffmpeg -i "$file" -i "${path%}"audio_cut.aac -c:v libvpx -crf 18 -b:v 0 -c:a libvorbis -strict experimental capture_cut_all.webm;
+          ffmpeg -i "$file" -i "${path%}"audio_cut.aac -c:v libvpx -crf 18 -b:v 0 -c:a libvorbis -strict experimental "${path%}"capture_cut_all.webm;
         done
 
 	echo "successfully merged and converted"
