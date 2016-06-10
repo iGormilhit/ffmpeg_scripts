@@ -7,7 +7,7 @@
 #watch to have the same time for the audio & video file to synchronize
 
 	path="/path/to/save/file/"
-	ffmpeg -i /path/to/file/test/audio.aac -ss 00:00:01 -t 00:00:10 -c:a copy "${path%}"audio_cut.aac
+	ffmpeg -i "${path%}"audio.aac -ss 00:00:01 -t 00:00:10 -c:a copy "${path%}"audio_cut.aac
 
 #For every ".mp4" file, cut the video from the time [HH:MM:SS] for a duration of [HH:MM:SS] eg: from second 1 until second 28 put 00:00:01 -t 00:00:27
 #and convert in ".webm" and ".mov" files while adding "_cut" in the name
@@ -42,9 +42,9 @@
 	read name
 	if [ -n $name ];
 	then
-  	mv "${path%}"*_all.mp4 "${path%}"/${name}.mp4
-	mv "${path%}"*_all.webm "${path%}"/${name}.webm
-	mv "${path%}"*_all.mov "${path%}"/${name}.mov
+  	mv "${path%}"*_all.mp4 "${path%}"${name}.mp4
+	mv "${path%}"*_all.webm "${path%}"${name}.webm
+	mv "${path%}"*_all.mov "${path%}"${name}.mov
 
 	echo "successfully renamed"
 fi
