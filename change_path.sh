@@ -5,5 +5,5 @@
 for file in /path/to/your/scripts/folder/*.sh
 do
   echo "Traitement de $file ..."
-  sed -i -e "s/\/old\/file\/path\//\/new\/file\/path\//g" "$file"
+  sed -i -e "s/\/your\/old\/file\/path/\/your\/new\/file\/path/g" "$file"
 done 
