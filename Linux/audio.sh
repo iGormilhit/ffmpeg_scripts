@@ -5,9 +5,17 @@
 #At the end of the command adapt your path system where you want to save the file.
 #It is recommended to create a folder dedicated to the multiple video files you will obtain. To avoid modifying other media files you have on your computer.
 
-        path="/path/to/save/file/"
-	ffmpeg -f alsa -i hw:0 -c:a aac -qp 0 -preset ultrafast "${path%}"audio.aac
-	 echo "audio stream successfully recorded"
+if [ $# -lt 2 ]; then
+    echo "Usage: $0 your/path name-of-file";
+    echo "Use q to stop";
+    exit 1;
+fi
+
+path=$1
+name=$2
+
+ffmpeg -f alsa -i hw:0 -c:a aac -qp 0 -preset ultrafast $path/$name.aac
+echo "audio stream successfully recorded"
 
 exit 0
 

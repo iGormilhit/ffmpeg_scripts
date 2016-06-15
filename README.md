@@ -3,7 +3,7 @@ Some basic scripts to automatize the tutorial creation workflow with ffmpeg. For
 
 ## Scripts construction
 
-Assuming the recording of your screen and audio at the same time could demand a lot of ressources to your processor, this workflow is built to aim at reducing this demand by splitting the process of recording audio and video.
+Assuming the recording of your screen and audio at the same time could demand a lot of ressources to your CPU, this workflow is built to aim at reducing this demand by splitting the process of recording audio and video.
 
 1. Run the `audio.sh` script and press `q` when you want to stop recording  
 2. Run the `video.sh` script while listening to the audio and press `q` when you want to stop recording. 
